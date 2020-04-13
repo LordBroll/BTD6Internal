@@ -60,7 +60,7 @@ void menu::draw() {
 			if (konfuse_module::forced_shield > 1) {
 				ImGui::SliderInt("##shield", &konfuse_module::forced_shield, 1, 10000, "force shield: %d hp");
 			} else {
-				ImGui::SliderInt("##hp", &konfuse_module::forced_shield, 1, 10000, "force shield: off");
+				ImGui::SliderInt("##shield", &konfuse_module::forced_shield, 1, 10000, "force shield: off");
 			}
 
 			ImGui::EndTabItem();
