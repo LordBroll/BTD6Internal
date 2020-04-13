@@ -17,3 +17,8 @@ Fully working c++ internal btd6 cheat, with in build value editing
 ![photo b](http://chinese.foreskin.market/product_images/d733f81f.png)
 ![photo c](http://chinese.foreskin.market/product_showcases/77a59ce0.gif)
 ![photo d](http://chinese.foreskin.market/product_images/6c4b54e4.png)
+
+# Cheat Engine
+the "cheat engine" tab is a custom written value editor for the games internal values
+to use it simpily *CONTROL + CLICK* the value search and enter in any number
+then you can just edit the number (this can be used to edit ANYTHING in the game)
