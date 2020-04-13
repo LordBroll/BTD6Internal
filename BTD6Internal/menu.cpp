@@ -17,7 +17,7 @@ void menu::draw() {
 
 	ImGui::BeginTabBar("##tabs");
 
-	if (ImGui::BeginTabItem("abuot")) {
+	if (ImGui::BeginTabItem("about")) {
 		ImGui::TextDisabled("bloons td 6 internal cheat");
 		ImGui::TextDisabled("written by vadmeme");
 		
