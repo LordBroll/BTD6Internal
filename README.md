@@ -21,4 +21,5 @@ Fully working c++ internal btd6 cheat, with in build value editing
 # Cheat Engine
 the "cheat engine" tab is a custom written value editor for the games internal values
 to use it simpily *CONTROL + CLICK* the value search and enter in any number
-then you can just edit the number (this can be used to edit ANYTHING in the game)
+
+then find the correct value from the list that pops up and edit it
