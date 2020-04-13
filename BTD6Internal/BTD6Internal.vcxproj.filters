@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\main">
+      <UniqueIdentifier>{67993be8-9c4b-426d-b6b5-77e704c97e92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ui">
+      <UniqueIdentifier>{6466a12e-548b-4db0-8c74-a9c274cdd936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\detours">
+      <UniqueIdentifier>{d05e5099-b83a-4787-89ec-03b6876e9faa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\imgui">
+      <UniqueIdentifier>{dcdbc6d1-d024-428e-84d5-2213dca1064a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{e75ff73c-7ffa-425a-b9a5-b647c7eec800}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\addr">
+      <UniqueIdentifier>{d97c0eeb-a3d7-4833-9be3-f6d2b92d2b11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{164c1e70-1922-4186-a5e5-419322424ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\simulation">
+      <UniqueIdentifier>{1299bff5-c2aa-4274-950a-e99ddde4acc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\konfuse">
+      <UniqueIdentifier>{50c0b405-b786-46b9-9fba-27aa7fc6e4fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\player">
+      <UniqueIdentifier>{19b7d834-7df2-422e-8817-788e5fb08875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\internal">
+      <UniqueIdentifier>{649de04a-3e76-4bcc-ad25-3280cbaabf62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\dumping">
+      <UniqueIdentifier>{91bb7595-5b6d-489a-abd9-07dc2fd8a61a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\bloon_map">
+      <UniqueIdentifier>{54b00544-457e-4818-8f74-0b81af886372}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files\main</Filter>
+    </ClCompile>
+    <ClCompile Include="dx.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui.cpp">
+      <Filter>Resource Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_demo.cpp">
+      <Filter>Resource Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_draw.cpp">
+      <Filter>Resource Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_dx11.cpp">
+      <Filter>Resource Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_impl_win32.cpp">
+      <Filter>Resource Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\imgui_widgets.cpp">
+      <Filter>Resource Files\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="menu_internal.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="menu.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="simulation.cpp">
+      <Filter>Source Files\game\simulation</Filter>
+    </ClCompile>
+    <ClCompile Include="addr.cpp">
+      <Filter>Source Files\addr</Filter>
+    </ClCompile>
+    <ClCompile Include="konfuse.cpp">
+      <Filter>Source Files\game\konfuse</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>Source Files\game\player</Filter>
+    </ClCompile>
+    <ClCompile Include="internals.cpp">
+      <Filter>Source Files\game\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="dumping.cpp">
+      <Filter>Source Files\game\dumping</Filter>
+    </ClCompile>
+    <ClCompile Include="bloon_map.cpp">
+      <Filter>Source Files\game\bloon_map</Filter>
+    </ClCompile>
+    <ClCompile Include="constants.cpp">
+      <Filter>Source Files\game\internal</Filter>
+    </ClCompile>
+    <ClCompile Include="cheat_engine.cpp">
+      <Filter>Source Files\game\konfuse</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dx.h">
+      <Filter>Source Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imconfig.h">
+      <Filter>Resource Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui.h">
+      <Filter>Resource Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_dx11.h">
+      <Filter>Resource Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_impl_win32.h">
+      <Filter>Resource Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imgui_internal.h">
+      <Filter>Resource Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_rectpack.h">
+      <Filter>Resource Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_textedit.h">
+      <Filter>Resource Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\imstb_truetype.h">
+      <Filter>Resource Files\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="detours\detours.h">
+      <Filter>Resource Files\detours</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>Source Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="menu_internal.h">
+      <Filter>Source Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="menu.h">
+      <Filter>Source Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation.h">
+      <Filter>Source Files\game\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="addr.h">
+      <Filter>Source Files\addr</Filter>
+    </ClInclude>
+    <ClInclude Include="simulation_struct.h">
+      <Filter>Source Files\game\simulation</Filter>
+    </ClInclude>
+    <ClInclude Include="konfuse.h">
+      <Filter>Source Files\game\konfuse</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Source Files\game\player</Filter>
+    </ClInclude>
+    <ClInclude Include="player_struct.h">
+      <Filter>Source Files\game\player</Filter>
+    </ClInclude>
+    <ClInclude Include="internals.h">
+      <Filter>Source Files\game\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="dumping.h">
+      <Filter>Source Files\game\dumping</Filter>
+    </ClInclude>
+    <ClInclude Include="dumping_struct.h">
+      <Filter>Source Files\game\dumping</Filter>
+    </ClInclude>
+    <ClInclude Include="bloon_map.h">
+      <Filter>Source Files\game\bloon_map</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Source Files\game\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="cheat_engine.h">
+      <Filter>Source Files\game\konfuse</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
