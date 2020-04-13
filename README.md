@@ -7,7 +7,7 @@ Fully working c++ internal btd6 cheat, with in build value editing
 - money editing
 - health editing
 - shield editing
-- ability to edit in game falgs
+- ability to edit in game flags
 - place towers anywhere
 - built in "cheat engine" like tool for editing values directly
 - encrypted value forcer
