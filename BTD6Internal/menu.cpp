@@ -116,10 +116,10 @@ void menu::draw() {
 		ImGui::InputText("##text_search", desc_search, 128);
 		ImGui::NextColumn();
 
-		ImGui::SliderInt("##value_search", &value_search, 1, 10000, "search: %.3f");
+		ImGui::SliderInt("##value_search", &value_search, 0, 10000, "search: %d");
 		ImGui::NextColumn();
 
-		ImGui::SliderInt("##override_search", &override_search, 1, 10000, "search: %.3f");
+		ImGui::SliderInt("##override_search", &override_search, 0, 10000, "search: %d");
 		ImGui::NextColumn();
 
 		ImGui::Separator();
