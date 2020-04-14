@@ -11,12 +11,15 @@ Fully working c++ internal btd6 cheat, with in build value editing
 - place towers anywhere
 - built in "cheat engine" like tool for editing values directly
 - encrypted value forcer
+- free inapp
+- free tower xp
 
 # Photos
 ![photo a](http://chinese.foreskin.market/product_images/eb6ac56e.png)
 ![photo b](http://chinese.foreskin.market/product_images/d733f81f.png)
 ![photo c](http://chinese.foreskin.market/product_showcases/77a59ce0.gif)
 ![photo d](http://chinese.foreskin.market/product_images/6c4b54e4.png)
+![photo e](http://chinese.foreskin.market/product_images/c8a6e4f3.png)
 
 # Cheat Engine
 the "cheat engine" tab is a custom written value editor for the games internal values
