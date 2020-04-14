@@ -28,7 +28,7 @@ player_object* player::obj() {
 }
 
 void player::add_tower_xp(string_t* tower, float xp) {
-	((player_add_tower_xp_fn)addr::player_add_tower_xp)(player_instance, tower, xp);
+	((player_add_tower_xp_fn)addr::xp_add_tower_xp)(player_instance, tower, xp);
 }
 
 void player::hook() {

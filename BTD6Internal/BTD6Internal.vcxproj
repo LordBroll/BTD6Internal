@@ -176,7 +176,7 @@
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="internals.cpp" />
     <ClCompile Include="konfuse.cpp" />
-    <ClCompile Include="bloon_map.cpp" />
+    <ClCompile Include="generic.cpp" />
     <ClCompile Include="menu.cpp" />
     <ClCompile Include="menu_internal.cpp" />
     <ClCompile Include="dumping.cpp" />
@@ -200,7 +200,7 @@
     <ClInclude Include="imgui\imstb_textedit.h" />
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="konfuse.h" />
-    <ClInclude Include="bloon_map.h" />
+    <ClInclude Include="generic.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="menu_internal.h" />
     <ClInclude Include="dumping.h" />

@@ -1,7 +1,7 @@
 #include "menu.h"
 
 #include "addr.h"
-#include "bloon_map.h"
+#include "generic.h"
 #include "debug.h"
 #include "imgui/imgui.h"
 #include "player.h"
@@ -24,8 +24,9 @@ void menu::draw() {
 		ImGui::EndTabItem();
 	}
 	
-	if (ImGui::BeginTabItem("map")) {
-		ImGui::Checkbox("place anywhere", &bloon_map::place_anywhere);
+	if (ImGui::BeginTabItem("global")) {
+		ImGui::Checkbox("place anywhere", &generic::place_anywhere);
+		ImGui::Checkbox("fast gain xp", &generic::fast_xp_gain);
 
 		ImGui::EndTabItem();
 	}

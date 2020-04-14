@@ -9,7 +9,7 @@
 #include "simulation.h"
 #include "internals.h"
 #include "dumping.h"
-#include "bloon_map.h"
+#include "generic.h"
 #include "constants.h"
 
 HMODULE wait_for_dll(const char* name) {
@@ -41,7 +41,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 				dumping::hook();
 				simulation::hook();
 				player::hook();
-				bloon_map::hook();
+				generic::hook();
 	    	
 				dx::hook();
 

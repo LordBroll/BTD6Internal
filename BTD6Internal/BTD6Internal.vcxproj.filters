@@ -49,7 +49,7 @@
     <Filter Include="Source Files\game\dumping">
       <UniqueIdentifier>{91bb7595-5b6d-489a-abd9-07dc2fd8a61a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\game\bloon_map">
+    <Filter Include="Source Files\game\generic">
       <UniqueIdentifier>{54b00544-457e-4818-8f74-0b81af886372}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -102,14 +102,14 @@
     <ClCompile Include="dumping.cpp">
       <Filter>Source Files\game\dumping</Filter>
     </ClCompile>
-    <ClCompile Include="bloon_map.cpp">
-      <Filter>Source Files\game\bloon_map</Filter>
-    </ClCompile>
     <ClCompile Include="constants.cpp">
       <Filter>Source Files\game\internal</Filter>
     </ClCompile>
     <ClCompile Include="cheat_engine.cpp">
       <Filter>Source Files\game\konfuse</Filter>
+    </ClCompile>
+    <ClCompile Include="generic.cpp">
+      <Filter>Source Files\game\generic</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -179,14 +179,14 @@
     <ClInclude Include="dumping_struct.h">
       <Filter>Source Files\game\dumping</Filter>
     </ClInclude>
-    <ClInclude Include="bloon_map.h">
-      <Filter>Source Files\game\bloon_map</Filter>
-    </ClInclude>
     <ClInclude Include="constants.h">
       <Filter>Source Files\game\internal</Filter>
     </ClInclude>
     <ClInclude Include="cheat_engine.h">
       <Filter>Source Files\game\konfuse</Filter>
+    </ClInclude>
+    <ClInclude Include="generic.h">
+      <Filter>Source Files\game\generic</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
