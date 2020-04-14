@@ -21,6 +21,7 @@ namespace addr {
 	extern DWORD64 player_get_tower_xp;
 	extern DWORD64 player_gain_monkey_money;
 	extern DWORD64 player_get_monkey_money;
+	extern DWORD64 player_add_instant_monkey;
 	
 	extern DWORD64 constants_get_aes;
 
@@ -28,4 +29,5 @@ namespace addr {
 	extern DWORD64 tower_manager_get_total_spent;
 
 	extern DWORD64 xp_add_tower_xp;
+	extern DWORD64 tower_inventory_is_path_tier_locked;
 }

@@ -12,6 +12,7 @@
 
 void menu::draw() {
 	simulation_object* sim = simulation::obj();
+	player_object* ply = player::obj();
 
 	ImGui::Begin("btd6 internal");
 
@@ -27,7 +28,8 @@ void menu::draw() {
 	if (ImGui::BeginTabItem("global")) {
 		ImGui::Checkbox("place anywhere", &generic::place_anywhere);
 		ImGui::Checkbox("fast gain xp", &generic::fast_xp_gain);
-
+		ImGui::Checkbox("infinite tier 5 monkeys", &generic::infinite_tier_five);
+		
 		ImGui::EndTabItem();
 	}
 	

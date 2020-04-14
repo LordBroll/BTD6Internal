@@ -31,6 +31,13 @@ void player::add_tower_xp(string_t* tower, float xp) {
 	((player_add_tower_xp_fn)addr::xp_add_tower_xp)(player_instance, tower, xp);
 }
 
+void player::add_instant_monkey(string_t* tower, int a, int b, int c, int amt) {
+	//array_t* arr = internal_array::new_int_array(new int[3] { a, b, c }, 3); // cba to free this, its like 8 bytes either way
+
+	//((player_add_instant_tower_fn)addr::player_add_instant_monkey)(player_instance, tower, arr, amt);
+}
+
+
 void player::hook() {
 	ctor_o = (player_ctor_fn)addr::simulation_simulate;
 	get_tower_xp_o = (player_get_tower_xp_fn)addr::player_get_tower_xp;

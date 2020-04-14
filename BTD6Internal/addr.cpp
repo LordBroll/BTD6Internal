@@ -19,13 +19,15 @@ DWORD64 addr::player_ctor = 0;
 DWORD64 addr::player_get_tower_xp = 0;
 DWORD64 addr::player_gain_monkey_money = 0;
 DWORD64 addr::player_get_monkey_money = 0;
+DWORD64 addr::player_add_instant_monkey = 0;
 
 DWORD64 addr::constants_get_aes = 0;
 
 DWORD64 addr::map_can_place = 0;
-DWORD64 addr::tower_manager_get_total_spent = 0;
-
 DWORD64 addr::xp_add_tower_xp = 0;
+
+DWORD64 addr::tower_manager_get_total_spent = 0;
+DWORD64 addr::tower_inventory_is_path_tier_locked = 0;
 
 #define add_sig(name, code) name = code; dbg::log("[+] addr::%s = %p", #name, name);
 
@@ -61,6 +63,7 @@ void addr::init() {
 	add_sig(player_get_tower_xp, abs_sig("\xE8\x00\x00\x00\x00\xF3\x44\x0F\x2C\xC0", "x????xxxxx", 1, 4));
 	add_sig(player_gain_monkey_money, abs_sig("\xE8\x00\x00\x00\x00\xFF\xC6\x41\x3B\xF7\x0F\x8C\x00\x00\x00\x00\x4C\x8B\x7C\x24\x00", "x????xxxxxxx????xxxx?", 1, 4));
 	add_sig(player_get_monkey_money, abs_sig("\xE8\x00\x00\x00\x00\x66\x0F\x6E\xCE\x0F\x5B\xC9", "x????xxxxxxx", 1, 4));
+	add_sig(player_add_instant_monkey, abs_sig("\xE8\x00\x00\x00\x00\x8B\xFD\x39\x6B\x10", "x????xxxxx", 1, 4));
 
 	// map class
 	add_sig(map_can_place, abs_sig("\xE8\x00\x00\x00\x00\x84\xC0\x75\x9F\x4D\x85\xFF", "x????xxxxxxx", 1, 4));
@@ -70,6 +73,9 @@ void addr::init() {
 
 	// xp class
 	add_sig(xp_add_tower_xp, abs_sig("\xE8\x00\x00\x00\x00\xEB\x81\x48\x85\xF6", "x????xxxxx", 1, 4));
+
+	// tower inventory
+	add_sig(tower_inventory_is_path_tier_locked, abs_sig("\xE8\x00\x00\x00\x00\x84\xC0\x75\x1D\x48\x8B\x5C\x24\x00", "x????xxxxxxxx?", 1, 4));
 	
 	/*
 	sigs i used for debugging
