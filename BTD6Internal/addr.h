@@ -30,4 +30,7 @@ namespace addr {
 
 	extern DWORD64 xp_add_tower_xp;
 	extern DWORD64 tower_inventory_is_path_tier_locked;
+
+	extern DWORD64 iap_on_purchase_fail;
+	extern DWORD64 iap_give_items;
 }

@@ -29,6 +29,11 @@ void menu::draw() {
 		ImGui::Checkbox("place anywhere", &generic::place_anywhere);
 		ImGui::Checkbox("fast gain xp", &generic::fast_xp_gain);
 		ImGui::Checkbox("infinite tier 5 monkeys", &generic::infinite_tier_five);
+
+		ImGui::Checkbox("free in app purchases", &generic::free_iap);
+		if(ImGui::IsItemHovered()) {
+			ImGui::SetTooltip("click cancel on the in app window and get your free items");
+		}
 		
 		ImGui::EndTabItem();
 	}

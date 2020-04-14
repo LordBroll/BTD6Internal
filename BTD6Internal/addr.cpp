@@ -29,6 +29,9 @@ DWORD64 addr::xp_add_tower_xp = 0;
 DWORD64 addr::tower_manager_get_total_spent = 0;
 DWORD64 addr::tower_inventory_is_path_tier_locked = 0;
 
+DWORD64 addr::iap_on_purchase_fail = 0;
+DWORD64 addr::iap_give_items = 0;
+
 #define add_sig(name, code) name = code; dbg::log("[+] addr::%s = %p", #name, name);
 
 void addr::init() {
@@ -76,7 +79,11 @@ void addr::init() {
 
 	// tower inventory
 	add_sig(tower_inventory_is_path_tier_locked, abs_sig("\xE8\x00\x00\x00\x00\x84\xC0\x75\x1D\x48\x8B\x5C\x24\x00", "x????xxxxxxxx?", 1, 4));
-	
+
+	// iap fucker
+	add_sig(iap_on_purchase_fail, abs_sig("\xE8\x00\x00\x00\x00\xEB\xD7\x48\x8B\x45\x10", "x????xxxxxx", 1, 4));
+	add_sig(iap_give_items, abs_sig("\xE8\x00\x00\x00\x00\x90\x48\x8B\x45\x08\x4C\x89\x63\x50", "x????xxxxxxxxx", 1, 4));
+
 	/*
 	sigs i used for debugging
 
